@@ -19,6 +19,7 @@ public class HelloController {
     // 여기에서는 외부에서 name (@RequestParam("name"))이란 이름으로 넘긴 파라미터를 메소드 파라미터 name(String name)에 저장
     public HelloResponseDto helloDto(@RequestParam("name") String name,
                                      @RequestParam("amount") int amount) {
+
         return new HelloResponseDto(name, amount);
     }
 }
